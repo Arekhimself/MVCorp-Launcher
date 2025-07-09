@@ -238,7 +238,7 @@ class Home {
         const videoThumbnail = videoContainer.querySelector('.youtube-thumbnail');
         const thumbnailImg = videoThumbnail.querySelector('.thumbnail-img');
         const playButton = videoThumbnail.querySelector('.ytb-play-btn');
-        const btn = videoContainer.querySelector('.ytb-btn');
+        const btn = videoContainer.querySelector('.ytb-btn'); 
 
         btn.addEventListener('click', () => shell.openExternal(`https://youtube.com/watch?v=${youtubeVideoId}`));
 
