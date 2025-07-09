@@ -1,3 +1,8 @@
+This is a fork
+For original launcher, go to https://github.com/CentralCorp/CentralCorp-Launcher
+All credits to Riptiaz, Boulldogo, Vexato and Luuxis
+
+
 ![logo](https://centralcorp.github.io/assets/img/minecraft_title.png)
 
 ## 🌍 English Version
