@@ -69,12 +69,12 @@ class Login {
         } else {
             document.querySelector(".player-role").style.display = "none";
         }
-    }
+    } 
 
     updateMoney(account) {
         if (this.config.money) {
             const blockMonnaie = document.createElement("div");
-            blockMonnaie.innerHTML = `<div>${account.user_info.monnaie} pts</div>`;
+            blockMonnaie.innerHTML = `<div>${account.user_info.monnaie} pièces</div>`;
             document.querySelector('.player-monnaie').appendChild(blockMonnaie);
         } else {
             document.querySelector(".player-monnaie").style.display = "none";
