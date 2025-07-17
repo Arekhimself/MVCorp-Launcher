@@ -1,7 +1,7 @@
 {
-    "name": "MVCorp",
+    "name": "MultiverseCorp Launcher",
     "productname": "MultiverseCorp Launcher",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "description": "MVCorp modded server launcher",
     "main": "src/app.js",
     "author": "Riptiaz/Boulldogo/Vexato/Luuxis/(ArekHimself)",
@@ -37,6 +37,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Arekhimself/CentralCorp-Launcher.git"
+        "url": "git+https://github.com/Arekhimself/MVCorp-Launcher.git"
     }
 }
