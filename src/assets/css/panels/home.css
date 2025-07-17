@@ -220,7 +220,7 @@ body::-webkit-scrollbar {
 }
 
 .opacity-1 {
-    opacity: 1;
+    opacity: 0.65;
 }
 .ytb-header,
 .news-header {

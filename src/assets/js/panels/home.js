@@ -224,10 +224,10 @@ class Home {
         const youtubeVideoId = this.config.video_url;
         const videoType = this.config.video_type;
         let youtubeEmbedUrl;
-
+		
         if (videoType === 'short') {
             youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&playsinline=1`;
-        } else if (videoType === 'video') {
+        } else if (videoType === 'video') { 
             youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1`;
         } else {
             console.error('Invalid video type specified in the configuration.');

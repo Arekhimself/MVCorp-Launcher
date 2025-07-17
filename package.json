@@ -1,7 +1,7 @@
 {
     "name": "MVCorp",
     "productname": "MultiverseCorp Launcher",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "MVCorp modded server launcher",
     "main": "src/app.js",
     "author": "Riptiaz/Boulldogo/Vexato/Luuxis/(ArekHimself)",
