@@ -3,32 +3,30 @@
  * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0
  */
 
+"use strict";
 const { app, BrowserWindow, Menu } = require("electron");
 const path = require("path");
 const os = require("os");
-const pkg = require("../../../../package.json");
 let dev = process.env.DEV_TOOL === 'open';
-let mainWindow = undefined;
+let updateWindow = undefined;
 
 function getWindow() {
-    return mainWindow;
+    return updateWindow;
 }
 
 function destroyWindow() {
-    if (!mainWindow) return;
-    app.quit();
-    mainWindow = undefined;
+    if (!updateWindow) return;
+    updateWindow.close();
+    updateWindow = undefined;
 }
 
 function createWindow() {
     destroyWindow();
-    mainWindow = new BrowserWindow({
-        title: pkg.preductname,
-        width: 1280,
-        height: 720,
-        minWidth: 980,
-        minHeight: 552,
-        resizable: true,
+    updateWindow = new BrowserWindow({
+        title: "Mise à jour",
+        width: 400,
+        height: 500,
+        resizable: false,
         icon: `./src/assets/images/icon.${os.platform() === "win32" ? "ico" : "png"}`,
         frame: false,
         show: false,
@@ -38,12 +36,12 @@ function createWindow() {
         },
     });
     Menu.setApplicationMenu(null);
-    mainWindow.setMenuBarVisibility(false);
-    mainWindow.loadFile(path.join(`${app.getAppPath()}/src/launcher.html`));
-    mainWindow.once('ready-to-show', () => {
-        if (mainWindow) {
-            if (dev) mainWindow.webContents.openDevTools({ mode: 'detach' })
-            mainWindow.show()
+    updateWindow.setMenuBarVisibility(false);
+    updateWindow.loadFile(path.join(`${app.getAppPath()}/src/index.html`));
+    updateWindow.once('ready-to-show', () => {
+        if (updateWindow) {
+            if (dev) updateWindow.webContents.openDevTools({ mode: 'detach' })
+            updateWindow.show();
         }
     });
 }
