@@ -1,10 +1,10 @@
 {
     "name": "MVCorp",
     "productname": "MultiverseCorp Launcher",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "MVCorp modded server launcher",
     "main": "src/app.js",
-    "author": "Riptiaz/Boulldogo/Vexato/Luuxis",
+    "author": "Riptiaz/Boulldogo/Vexato/Luuxis/(ArekHimself)",
     "env": "azuriom",
     "settings": "http://82.66.93.197",
     "scripts": {
