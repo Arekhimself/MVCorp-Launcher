@@ -77,7 +77,7 @@ class Index {
                     releaseType: 'release',
                 }],
                 win: {
-                    icon: "./app/assets/images/icon.ico",
+                    icon: "./src/assets/images/icon.ico",
                     target: [{
                         target: "nsis",
                         arch: "x64"
