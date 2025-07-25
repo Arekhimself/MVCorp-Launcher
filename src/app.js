@@ -19,7 +19,7 @@ let dev = process.env.NODE_ENV === 'dev';
 if (dev) {
     let appPath = path.resolve('./AppData/Launcher').replace(/\\/g, '/');
     if (!fs.existsSync(appPath)) fs.mkdirSync(appPath, { recursive: true });
-    app.setPath('userData', appPath);
+    app.setPath('userData', appPath); 
 }
 
 if (!app.requestSingleInstanceLock()) app.quit();
