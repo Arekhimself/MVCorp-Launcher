@@ -1,12 +1,12 @@
 {
-    "name": "conflictura",
-    "preductname": "Conflictura Launcher",
-    "version": "4.0.0",
-    "description": "Conflictura modded server launcher",
+    "name": "MVCorp Launcher",
+    "preductname": "Launcher MVCorp",
+    "version": "2.0.0",
+    "description": "Le launcher officiel du serveur MVCORP.TOP",
     "main": "src/app.js",
-    "author": "Riptiaz/Boulldogo/Vexato/Luuxis",
+    "author": "Riptiaz/Boulldogo/Vexato/Luuxis and Mr_F",
     "env": "azuriom",
-    "settings": "https://conflictura.eu",
+    "settings": "https://mvcorp.top",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "build": "node build.js --obf=true --build=platform",
@@ -38,6 +38,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Riptiaz/CentralCorp-Launcher.git"
+        "url": "git+https://github.com/Arekhimself/MVCorp-Launcher.git"
     }
 }
