@@ -1,7 +1,7 @@
 {
-    "name": "MVCorp Launcher",
+    "name": "MVCorp_Launcher",
     "preductname": "Launcher MVCorp",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Le launcher officiel du serveur MVCORP.TOP",
     "main": "src/app.js",
     "author": "Riptiaz/Boulldogo/Vexato/Luuxis and Mr_F",
@@ -11,7 +11,7 @@
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "build": "node build.js --obf=true --build=platform",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --ignore AppData/ --ignore node_modules/ --legacy-watch --exec npm start",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/CentralCorp/CentralCorp-Launcher/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://mvcorp.top/storage/img/logomvcorp.png"
     },
     "license": "CC0",
     "nodemonConfig": {
