@@ -1,12 +1,12 @@
 {
     "name": "mvcorp_launcher",
     "preductname": "MVCorp Launcher",
-    "version": "2.0.2",
-    "description": "CMVCorp modded server launcher",
+    "version": "2.0.3",
+    "description": "MVCorp official launcher",
     "main": "src/app.js",
     "author": "Riptiaz/Boulldogo/Vexato/Luuxis",
     "env": "azuriom",
-    "settings": "mvcorp.top",
+    "settings": "https://mvcorp.top",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "build": "node build.js --obf=true --build=platform",
