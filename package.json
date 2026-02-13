@@ -1,12 +1,12 @@
 {
-    "name": "conflictura",
-    "preductname": "Conflictura Launcher",
-    "version": "4.0.1",
-    "description": "Conflictura modded server launcher",
+    "name": "mvcorp_launcher",
+    "preductname": "MVCorp Launcher",
+    "version": "2.0.2",
+    "description": "CMVCorp modded server launcher",
     "main": "src/app.js",
     "author": "Riptiaz/Boulldogo/Vexato/Luuxis",
     "env": "azuriom",
-    "settings": "https://conflictura.eu",
+    "settings": "mvcorp.top",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "build": "node build.js --obf=true --build=platform",
